@@ -9,7 +9,7 @@ async function predict() {
     formData.append("text", line);
     formData.append("count", count.value);
 
-    let response = await fetch('http://127.0.0.1:5000/predict', {
+    let response = await fetch('https://prabin-avenger-text-prediction.onrender.com/predict', {
         method : 'POST', body : formData
     });
 
