@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="static\style.css">
 </head>
 <body>
-    <h1>Test Avengers Sentence Completion</h1>
+    <div class="box">
+        <label for="text" class="instruct">Enter a short sentence related to Avengers:</label>
+    </div>
+    <div class="box box1st">
+        <input type="text" id="text" spellcheck="false"/>
+        <input type="range" id="count" min="1" max="5" value="3"/>
+        <span id="value"></span>
+    </div>
+    <div class="box selector_instruct">
+        Set number of words to generate
+    </div>
+    <div class="box">
+        <button id="predict" type="button">Generate</button>
+    </div>
+    <div class="result_div">
+        <p id="result"></p>
+    </div>
 
-    <label for="text">Enter a short sentence related to Avengers:</label>
-    <input type="text" id="text"/>
-    <input type="range" id="count" min="1" max="5" value="3"/>
-
-    <button id="predict" type="button">Predict</button>
-
-    <p id="result"></p>
-
+    <div class="exampledivvv">
+        <div class="example">
+        <div class="example_text">Some examples</div>
+        <div class="example_pic">
+            <img src="static\Untitled design.png"/>
+        </div>
+    </div>
+    </div>
     <script src="static\script.js"></script>
 </body>
 </html>
