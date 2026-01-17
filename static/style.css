@@ -86,7 +86,8 @@ button {
 }
 
 .result_div {
-    height: 35px;
+    min-height: 35px;
+    overflow-wrap: break-word;
 }
 
 input[type="range"] {
